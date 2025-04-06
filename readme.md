@@ -2,7 +2,7 @@
 
 A Neovim plugin written in Lua to quickly switch between related Angular component files: template (.html), spec (.spec.ts), TypeScript (.ts), and CSS (.css).
 
-![Angular File Switcher demo](https://github.com/vijhhh2/angular-switch.nvim/assets/angular-switch.mov)
+![Angular File Switcher demo](https://github.com/vijhhh2/angular-switch.nvim/blob/main/assets/angular-switch.mov)
 
 ## Features
 
