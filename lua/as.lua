@@ -119,7 +119,7 @@ local switch_to_ts_file = function(dir, filename, extension, files)
   end
   local path = vim.fs.normalize(vim.fs.joinpath(dir, component_ts_file))
   attach_to_buff(path)
-  vim.print("switched to ts file: " .. component_ts_file)
+  vim.notify("switched to ts file: " .. component_ts_file, vim.log.levels.INFO, { title = "Angular Switch" })
 end
 
 --- Swithc to component spec ts file
@@ -140,7 +140,7 @@ local switch_to_html_file = function(dir, filename, extension, files)
   end
   local path = vim.fs.normalize(vim.fs.joinpath(dir, component_html_file))
   attach_to_buff(path)
-  vim.print("switched to html file: " .. component_html_file)
+  vim.notify("switched to html file: " .. component_html_file, vim.log.levels.INFO, { title = "Angular Switch" })
 end
 
 --- Swithc to component spec ts file
@@ -162,7 +162,7 @@ local switch_to_spec_ts_file = function(dir, filename, extension, files)
 
   local path = vim.fs.normalize(vim.fs.joinpath(dir, component_spec_ts_file))
   attach_to_buff(path)
-  vim.print("switched to spec ts file: " .. component_spec_ts_file)
+  vim.notify("switched to spec ts file: " .. component_spec_ts_file, vim.log.levels.INFO, { title = "Angular Switch" })
 end
 
 --- Swithc to component style file
@@ -200,7 +200,7 @@ local switch_to_style_file = function(dir, filename, extension, files)
 
   local path = vim.fs.normalize(vim.fs.joinpath(dir, correct_file))
   attach_to_buff(path)
-  vim.print("switched to style file: " .. correct_file)
+  vim.notify("switched to style file: " .. correct_file, vim.log.levels.INFO, { title = "Angular Switch" })
 end
 
 --- get the current file's name and list of files in the directory
